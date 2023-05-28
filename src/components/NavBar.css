@@ -1,0 +1,72 @@
+.navbar{
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+    border-bottom: .1px solid #383838;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: rgba(0,0,0, 0.6);
+    backdrop-filter: blur(30px);
+}
+
+.navbar-heading{
+    flex: 1;
+    padding-top:  .6rem;
+    padding-left: 1rem;
+    font-size: 24px;
+    font-weight: 700;
+    height: 45px;
+    cursor: pointer;
+}
+
+
+.navbar-tabs{
+    height: 100%;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.navbar-tab{
+    height: 100%;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
+
+.navbar-tab:hover{
+    background-color: rgb(32, 32, 32);
+    transition: var(--twitter-primary-transition);
+}
+
+.nav-tab{
+    height: 100%;
+    width: max-content;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.tab > span {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+.active-tab{
+    background-color: var(--twitter-primary);
+    height: 4px;
+    position: absolute;
+    align-self: center;
+    min-width: 56px;
+    width: 100%;
+    bottom: 0px;
+    border-radius: 999px;
+}

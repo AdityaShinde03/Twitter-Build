@@ -1,0 +1,7 @@
+.feed{
+    height: 100vh;
+    overflow-y: scroll;
+    flex: 0.7;
+    border-left: 1px solid #383838;
+    border-right: 1px solid #383838;
+}

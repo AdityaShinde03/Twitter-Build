@@ -1,23 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import "./SplashScreen.css";
+import SideBar from "./components/SideBar";
+import Feed from "./components/Feed";
+import Widgets from "./components/Widgets";
+import { useEffect, useState } from "react";
+import { SiTwitter } from "react-icons/si";
 
 function App() {
+  const [showContent, setShowContent] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setShowContent(true);
+    }, 2000); // Set the desired duration in milliseconds
+  }, []);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      {!showContent && (
+        <div className="splash-screen">
+          <SiTwitter color="rgb(29, 155, 240)" size={60} />
+        </div>
+      )}
+      {/* SideBar */}
+      <SideBar />
+      {/* FEED */}
+      <Feed />
+      {/* Widgets */}
+      <Widgets />
     </div>
   );
 }
