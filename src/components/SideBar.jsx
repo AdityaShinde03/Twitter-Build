@@ -85,14 +85,14 @@ function SideBar() {
 
       <div className="profile-img-md">
         <img
-          src="https://pbs.twimg.com/profile_images/1603963712880025600/HD8OjLuO_400x400.jpg"
+          src="https://img.freepik.com/free-vector/hand-drawn-nft-style-ape-illustration_23-2149622021.jpg?w=2000"
           alt="Profile Picture"
         />
       </div>
       <div className="sidebar-footer">
         <div className="profile-img">
           <img
-            src="https://pbs.twimg.com/profile_images/1603963712880025600/HD8OjLuO_400x400.jpg"
+            src="https://img.freepik.com/free-vector/hand-drawn-nft-style-ape-illustration_23-2149622021.jpg?w=2000"
             alt="Profile Picture"
           />
         </div>

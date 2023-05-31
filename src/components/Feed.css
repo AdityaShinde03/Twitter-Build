@@ -1,7 +1,25 @@
 .feed{
+    position: relative;
     height: 100vh;
     overflow-y: scroll;
     flex: 0.7;
     border-left: 1px solid #383838;
     border-right: 1px solid #383838;
+}
+
+.show-tweets{
+    border-bottom: 1px solid #383838;
+    padding: .8rem 0rem;
+    cursor: pointer;
+}
+
+.show-tweets:hover{
+    background-color: #060606;
+    transition: var(--twitter-primary-transition);
+}
+
+.tweets{
+    width: max-content;
+    margin: 0 auto;
+    color: var(--twitter-primary);
 }

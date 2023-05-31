@@ -15,15 +15,15 @@ const NavBar = () => {
     <div className="navbar-tabs">
         <div className="navbar-tab"  onClick={()=>handleClick(0)}>
             <div className="nav-tab">
-                <div className="tab">
-                    <span>For You</span>
+                <div className={acitveTab === 0 ? "active-span" : "tab"}>
+                    <span >For You</span>
                     <div className={acitveTab === 0 ? "active-tab":""}></div>
                 </div>
             </div>
         </div>
         <div className="navbar-tab" onClick={()=>handleClick(1)}>
             <div className="nav-tab">
-                <div className="tab">
+                <div className={acitveTab === 1 ? "active-span" : "tab"}>
                     <span>Following</span>
                     <div className={acitveTab === 1 ? "active-tab":""}></div>
                 </div>
